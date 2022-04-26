@@ -19,6 +19,8 @@ plugins:
   - tier-techdocs-core
 ```
 
+Before you proceed, make sure you are logged in to GitHub container registry. Check the [official documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-to-the-container-registry) to learn how to do this.
+
 Now, you can use the Backstage `techdocs-cli` to serve a preview of your static site:
 
 `npx @techdocs/cli serve -i ghcr.io/tiermobility/techdocs-container:latest`
