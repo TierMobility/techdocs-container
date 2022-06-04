@@ -19,7 +19,7 @@ jobs:
       - name: set tag_name
         run: |
           echo "tag_name=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-      - uses: docker/build-push-action@v2
+      - uses: docker/build-push-action@v3
         with:
           push: true
           tags: ghcr.io/tiermobility/techdocs-container:latest,ghcr.io/tiermobility/techdocs-container:${{ env.tag_name }}
